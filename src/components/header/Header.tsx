@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Turtle } from "lucide-react";
+import { ShoppingBasket } from "lucide-react";
 
 import Hamburger from "./Hamburger";
 import { Button } from "../ui/button";
@@ -17,9 +17,9 @@ function Header() {
       >
       <Hamburger toggle={() => setIsOpen(!isOpen)} isOpen={isOpen} />
         <Button asChild className="m-1">
-          <Link href="/">
-            <Turtle />
-            <span className={`${!isOpen && "hidden"} ml-2`}>Turtle</span>
+          <Link href="/grocery">
+            <ShoppingBasket />
+            <span className={`${!isOpen && "hidden"} ml-2`}>Lista de Mercado</span>
           </Link>
         </Button>
       </nav>

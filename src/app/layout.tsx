@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} flex`}>
         <Header />
-        <div className="h-screen w-full overflow-y-auto">{children}</div>
+        <div className="h-screen w-full overflow-y-auto p-5">{children}</div>
       </body>
     </html>
   );
